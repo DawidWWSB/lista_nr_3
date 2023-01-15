@@ -38,7 +38,6 @@ public class Program
 		var chars = "@#$%^&*~[]=><AaBbCcDdEeFfGgHhIjJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%^&*~[]=><";
 		var random = new Random();
 		
-		return new string(Enumerable.Repeat(chars, 15)
-        .Select(s => s[random.Next(s.Length)]).ToArray());
+		return new string(Enumerable.Repeat(chars, 15).Select(s => s[random.Next(s.Length)]).ToArray());
 	}
 }
